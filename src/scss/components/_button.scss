@@ -1,0 +1,61 @@
+.btn{
+    @include fluid('font-size', 12px, $font-size);
+
+    border-radius: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0.9rem;
+    min-width: 200px;
+    text-align: left;
+    position: relative;
+
+
+    &:after {
+        content:"\f105";
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 1.5rem;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+
+    }
+
+    &-primary{
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover{
+            background-color: darken($primary,10%);
+            border-color: darken($primary, 10%);
+        }
+    }
+
+    &-success{
+        background-color: $success;
+        border-color: $success;
+
+        &:hover{
+            background-color: darken($success,10%);
+            border-color: darken($success, 10%);
+        }
+    }
+
+    &-outline {
+        &-white {
+            color: color(white) !important;
+            background-color: transparent !important;
+            border: 1px solid color(white) !important;
+
+            &:hover {
+                color: color(primary) !important;
+                background-color: color(white) !important;
+            }
+        }
+        
+    }
+}

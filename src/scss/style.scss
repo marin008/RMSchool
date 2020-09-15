@@ -1,0 +1,35 @@
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/variables';
+
+@import '../vendor/bootstrap/scss/bootstrap';
+
+//@import 'fonts/gotham';
+@import '../vendor/font-awesome/font-awesome';
+@import '../vendor/select2/src/scss/core';
+@import '../vendor/@ttskch/select2-bootstrap4-theme/src/layout';
+
+// @import 'base/reset2';
+@import 'base/typography';
+
+@import 'helpers/helpers';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/form';
+@import 'components/select2';
+
+@import 'common/header';
+@import 'common/footer';
+
+// @import 'segment/preloader';
+// @import 'segment/cookie-accept';
+// @import 'segment/content';
+@import 'segment/content-404';
+@import 'segment/hero-rotator';
+@import 'segment/navbar';
+@import 'segment/cta-image';
+@import 'segment/section-action';
+
+@import 'pages/page';
+

@@ -1,0 +1,25 @@
+.header{
+    box-shadow: inset 0px -1px 0px #DEDEDE;
+    // height:125px;
+    height:auto;
+    
+    .nav-item.active a{
+        color:#3CA3D6;
+    }
+
+    .nav-item a{
+        color:black;
+        font-size:15px;
+        line-height: 17px;
+    }
+
+    .navbar-light .navbar-toggler{
+        border:none;
+        outline:none;
+    }
+
+    nav {
+        color: #0250A1;
+    }
+   
+}

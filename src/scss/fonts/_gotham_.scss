@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('#{$font-path}/Gotham/Gotham-Book.eot');
+    src: url('#{$font-path}/Gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Gotham/Gotham-Book.woff2') format('woff2'),
+        url('#{$font-path}/Gotham/Gotham-Book.woff') format('woff'),
+        url('#{$font-path}/Gotham/Gotham-Book.ttf') format('truetype'),
+        url('#{$font-path}/Gotham/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-BookItalic';
+    src: url('#{$font-path}/Gotham/Gotham-BookItalic.eot');
+    src: url('#{$font-path}/Gotham/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Gotham/Gotham-BookItalic.woff2') format('woff2'),
+        url('#{$font-path}/Gotham/Gotham-BookItalic.woff') format('woff'),
+        url('#{$font-path}/Gotham/Gotham-BookItalic.ttf') format('truetype'),
+        url('#{$font-path}/Gotham/Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('#{$font-path}/Gotham/Gotham-Medium.eot');
+    src: url('#{$font-path}/Gotham/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Gotham/Gotham-Medium.woff2') format('woff2'),
+        url('#{$font-path}/Gotham/Gotham-Medium.woff') format('woff'),
+        url('#{$font-path}/Gotham/Gotham-Medium.ttf') format('truetype'),
+        url('#{$font-path}/Gotham/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('#{$font-path}/Gotham/Gotham-Bold.eot');
+    src: url('#{$font-path}/Gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Gotham/Gotham-Bold.woff2') format('woff2'),
+        url('#{$font-path}/Gotham/Gotham-Bold.woff') format('woff'),
+        url('#{$font-path}/Gotham/Gotham-Bold.ttf') format('truetype'),
+        url('#{$font-path}/Gotham/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-BoldItalic';
+    src: url('#{$font-path}/Gotham/Gotham-BoldItalic.eot');
+    src: url('#{$font-path}/Gotham/Gotham-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Gotham/Gotham-BoldItalic.woff2') format('woff2'),
+        url('#{$font-path}/Gotham/Gotham-BoldItalic.woff') format('woff'),
+        url('#{$font-path}/Gotham/Gotham-BoldItalic.ttf') format('truetype'),
+        url('#{$font-path}/Gotham/Gotham-BoldItalic.svg#Gotham-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

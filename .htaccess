@@ -1,0 +1,27 @@
+<FilesMatch "\.(?i:gif|jpe?g|png|webp|ico|swf)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=172800, public, must-revalidate"
+  </IfModule>
+</FilesMatch>
+
+# Don't listing directory
+Options -Indexes
+# prevent folder listing
+IndexIgnore *
+# Follow symbolic links
+Options +FollowSymLinks
+# Default handler
+DirectoryIndex index.php
+
+ErrorDocument 403 'Greska 403!!!'
+ErrorDocument 404 'Greska 404!!!'
+
+RewriteEngine on
+# RewriteBase /   
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^(.*)$ index.php?%1&params=$1 [L]

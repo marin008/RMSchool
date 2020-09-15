@@ -1,0 +1,20 @@
+.content-404 {
+	padding: 25px 0;
+//	@include fluid('padding-top', 25, 75, $sm, $xl);
+//	@include fluid('padding-bottom', 25, 75, $sm, $xl);
+	
+	h1 {
+        @include setFont($fontFamily, 700);
+		@include fluid('font-size', 75, 250, $xs, $lg);
+		@include fluid('font-size', 200, 250, $lg, $xxl);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+
+	.img-fluid {
+		max-width: 45%;
+	}
+}

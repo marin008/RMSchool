@@ -1,0 +1,180 @@
+.form {
+
+	&-group {
+		padding: 0 .5rem;
+		margin: 1.5rem 0;
+	}	
+
+	&-control {
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid color(black);
+		margin: 0;
+		padding: 0;
+		height: calc(60px - .5rem);
+		line-height: 1;
+		font-size: 20px;
+		color: color(black);
+
+		&:focus {
+			box-shadow: none;
+			border-color: color(black);
+		}		
+
+		&[type=file] {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+	}
+
+	&-check {
+		position: relative;
+		display: block;
+//		padding-left: 1.75rem;
+
+		&.radio {
+
+			+ .radio {
+				margin-top: 0;
+			}
+		}
+
+		[type="checkbox"],
+		[type="radio"] {
+
+			&, 
+			&:not(:checked) {
+				position: absolute;
+				pointer-events: none;
+				opacity: 0;
+				box-sizing: border-box;
+				padding: 0;				
+			}
+
+			& + label {
+				padding-left: 1.75rem;
+				color: color(black);
+				position: relative;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					width: 1rem;
+					height: 1rem;
+					border: solid 2px color(black);
+					transition: $transition;
+				}
+
+				&:before {
+					border-top-color: transparent;
+					border-left-color: transparent;			
+				}
+			}
+
+			&:checked {
+
+				& + label {
+
+					&:before {
+//						border-top-color: transparent;
+//						border-left-color: transparent;
+						width: .75rem;
+						height: 1.3rem;
+						top: -.4rem;
+						left: .2rem;
+						transform: rotate(40deg);
+					}
+
+					&:after {
+						opacity: 0;					
+					}
+				}
+			}
+		}
+
+		[type="radio"] {
+
+			+ label {
+
+				&:before {
+					opacity: 0;
+				}
+
+				&:after {
+					border-width: 1px;
+					border-radius: .4rem;
+				}
+			}
+
+			&:checked {
+
+				+ label {
+
+					&:before {
+						opacity: 1;
+						width: .5rem;
+						height: 1rem;
+						top: -.25rem;
+						left: .4rem;
+					}
+
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+label {
+	display: block;
+//	margin: 0;
+	line-height: 1;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid color(black);
+}
+
+textarea.form-control {
+	border: 1px solid color(black);
+	height: 8rem;
+	padding: .75rem;
+}
+
+select.form-control {
+	border: 1px solid color(black);
+	line-height: 60px;
+}
+
+span.form-control {
+	position: relative;
+	border-bottom: none;
+	background-color: color(black);
+	color: color(white);
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	max-width: 325px;
+	width: 100%;
+
+	> svg {
+		margin-right: 1rem;
+		transform: translateY(-4px);
+	}
+}

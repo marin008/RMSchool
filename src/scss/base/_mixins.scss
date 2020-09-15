@@ -1,0 +1,164 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+@mixin clearfix() {
+  *zoom: 1;
+  &:before, 
+  &:after {
+    content: "";
+    display: table; 
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// only px values !!!
+@mixin fluid($property, $min-size, $max-size, $min-width: $sm, $max-width: $lg) {
+    $pMin: strip-unit($min-size);
+    $pMax: strip-unit($max-size);
+    $wMin: strip-unit($min-width);
+    $wMax: strip-unit($max-width);
+    $x: ($pMax - $pMin)/($wMax - $wMin);
+    $y: $pMax - $wMax * $x;
+    @if ($min-width > 0) {
+      #{$property}: #{$pMin}px;
+    }
+    @media (min-width: #{$wMin}px) { #{$property}: fluidCalc($pMin, $pMax, $wMin, $wMax); }
+    @media (min-width: #{$wMax}px) { #{$property}: #{$pMax}px; }
+}
+
+@function fluidCalc($pMin, $pMax, $wMin, $wMax, $c: 1) {
+    $x: ($pMax - $pMin)/($wMax - $wMin);
+    $y: $pMax - $wMax * $x;
+    @return #{calc((#{100*$x}vw + #{$y}px) * #{$c})};
+}
+
+@mixin fluidP($max: 30, $min: 20, $maxW: $lg, $minW: $sm) {
+  $maxP: $max * 1px;
+  $minP: $min * 1px;
+
+  & {
+    padding-left: $minP;
+    padding-right: $minP;
+  }
+  @media screen and (min-width: $minW) {
+    padding-left: calc(#{$minP} + #{strip-unit($maxP - $minP)} * (100vw - #{$minW}) / #{strip-unit($maxW - $minW)});
+    padding-right: calc(#{$minP} + #{strip-unit($maxP - $minP)} * (100vw - #{$minW}) / #{strip-unit($maxW - $minW)});
+  }
+  @media screen and (min-width: $maxW) {
+    padding-left: $maxP;
+    padding-right: $maxP;  
+  }
+}
+
+@mixin fluidF($bigF: (size: 25, line: 35, spacing: 0), $smallF: (size: 18, line: 24, spacing: 0), $maxW: $lg, $minW: $sm - 1) {
+  $minFS: map-get($smallF, size) * 1px;
+  $minLH: map-get($smallF, line) * 1px;
+  $minSP: map-get($smallF, spacing) * 1px;
+  $maxFS: map-get($bigF, size) * 1px;
+  $maxLH: map-get($bigF, line) * 1px;
+  $maxSP: map-get($bigF, spacing) * 1px;
+
+  & {
+    font-size: $minFS;
+    line-height: $minLH;
+    letter-spacing: $minSP;
+
+    @media screen and (min-width: $minW) {
+      font-size: calc(#{$minFS} + #{strip-unit($maxFS - $minFS)} * (100vw - #{$minW}) / #{strip-unit($maxW - $minW)});
+      line-height: calc(#{$minLH} + #{strip-unit($maxLH - $minLH)} * (100vw - #{$minW}) / #{strip-unit($maxW - $minW)});
+      letter-spacing: calc(#{$minSP} + #{strip-unit($maxSP - $minSP)} * (100vw - #{$minW}) / #{strip-unit($maxW - $minW)});
+    }
+
+    @media screen and (min-width: $maxW) {
+      font-size: $maxFS;
+      line-height: $maxLH;
+      letter-spacing: $maxSP;
+    }
+  }  
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+//  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+//  }
+}
+
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ * 
+ */
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: px2rem($size);
+}
+
+/*
+  setFont()
+*/
+@mixin setFont($fontFamily: $fontFamily, $fontWeight: normal, $fontStyle: normal) {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+}
+
+
+/// Truncates text and adds an ellipsis to represent overflow.
+///
+/// @param {Number} $width [100%]
+///   Max-width for the string to respect before being truncated
+///
+/// @example scss - Usage
+///   .element {
+///     @include ellipsis;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     display: inline-block;
+///     max-width: 100%;
+///     overflow: hidden;
+///     text-overflow: ellipsis;
+///     white-space: nowrap;
+///     word-wrap: normal;
+///   }
+
+@mixin ellipsis($width: 100%) {
+  display: inline-block;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+

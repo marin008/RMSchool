@@ -1,0 +1,28 @@
+.cookie-accept {
+	position: fixed;
+	bottom: -100%;
+	left: 0;
+	width: 100vw;
+	transition: all 2s linear;
+	transition-delay: 1s;
+	z-index: 9999;
+	
+	p {
+		@include fluidF((size: 15, line: 20, spacing: 0), (size: 15, line: 20, spacing: 0));
+		padding-bottom: 0;
+	}
+
+	.btn-ghost {
+		padding: 10px 40px;
+		min-width: 130px;
+		text-align: center;
+	}
+
+	a {
+	    &:hover,
+	    &:active,
+	    &:focus {
+	    	text-decoration: underline;
+	    }
+	}
+}

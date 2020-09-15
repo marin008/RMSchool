@@ -1,0 +1,117 @@
+$font-path: '../fonts';
+$fa-font-path:        "../fonts/FontAwesome";
+$slick-font-path: "../fonts/slick/";
+
+$colors: (
+	white:	#ffffff,
+	gray:	#d8d8d8,
+	black:	#333,
+	notice: #f8f8f8,
+	success:#6BB644,
+	warning: #faa05a,
+	danger: #f0506e,
+	primary:#034EA2,
+);
+
+$youtube: #cc181e;
+$vimeo: #1ab7ea;
+
+$form_ok: #2d856c;
+$form_error: #ff0000;
+
+/*
+Gotham-Book 		400
+Gotham-BookItalic 	400
+Gotham-Medium 		500
+Gotham-Bold 		700
+Gotham-BoldItalic 	700
+*/
+
+/*
+$fontFamily: (
+	g4:  Gotham-Book,
+	g4i: Gotham-BookItalic,
+	g5:  Gotham-Medium,
+	g7:  Gotham-Bold,
+	g7i: Gotham-BoldItalic
+);
+*/
+$fontFamily: 'Ubuntu';
+
+
+$color-gray: color(gray);
+$color-white: color(white);
+$color-black: color(black);
+
+$font-size: 14;
+$font-size-min: 14;
+$font-size-max: 16;
+
+$fa-font-size-base:   #{$font-size}px;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1340px,
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           16px;
+$grid-row-columns:            6;
+
+
+$spacers: (
+	10: 10px,
+	15: 15px,
+	20: 20px,
+	25: 25px,
+	30: 30px,
+	40: 40px,
+	50: 50px,
+	60: 60px,
+	70: 70px,
+	75: 75px,
+	80: 80px,
+	90: 90px,
+	100: 100px,
+	150: 150px,
+	200: 200px
+);
+
+
+$xs: map-get($grid-breakpoints, xs);
+$sm: map-get($grid-breakpoints, sm);
+$md: map-get($grid-breakpoints, md);
+$lg: map-get($grid-breakpoints, lg);
+$xl: map-get($grid-breakpoints, xl);
+$xxl: map-get($grid-breakpoints, xxl);
+
+$transition: all .3s linear;
+
+$paddingVW: 7.291666667vw;
+
+$shadow: 0px 0px 20px rgba(color(black), .05);
