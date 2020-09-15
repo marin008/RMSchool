@@ -1,0 +1,46 @@
+.ambassadors {
+    background:color(primary) url(../img/jpg/lab.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    
+    .container {
+        h2{
+            font-weight: 300;
+        }
+        h2, p {
+            color: color(white);
+        }
+
+        .card {
+        //    max-width: 370px;
+        //    max-height: 370px;
+        // novi komentar
+           border: none;
+           background: transparent;
+            
+           img {
+               width: 100%;
+               height: auto;
+           }
+
+           .card-text{
+               background: color(white);
+           }
+           .card-title {
+               margin-left: 1.2rem;
+               color: color(primary);
+           }
+
+           .card-footer {
+               color: color(primary);
+               border: none;
+           }
+        }
+        
+    }
+
+    .btn {
+        
+    }
+}

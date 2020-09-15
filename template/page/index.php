@@ -6,7 +6,7 @@
 
 Site::getSegment('hero_rotator');
 Site::getSegment('cta_image');
-Site::getSegment('section-action');
+Site::getSegment('ambassadors');
 //Site::getSegment('typography');
 
 

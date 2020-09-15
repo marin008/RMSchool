@@ -98,10 +98,11 @@ p {
 
 a {
     font-family: inherit;
-    text-decoration: underline;
-    color: color(black);
+    text-decoration: none;
+    color: color(primary);
     transition: all .3s linear;
     display: inline-block;
+
 
     &:hover,
     &:active,
