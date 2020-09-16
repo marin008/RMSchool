@@ -6,7 +6,7 @@
   </button>
   <div class="collapse navbar-collapse d-flex flex-column" id="navbarText">
         <ul class="list-group list-group-horizontal-xl ml-auto">
-            <li class="list-group-item border-0 p-1 ml-3 fa fa-facebook-square icons"><a href="#"></a></li>
+            <li class="list-group-item border-0 p-1 ml-3 fa fa-facebook-square icons" href="#"><a href="#"></a></li>
             <li class="list-group-item border-0 p-1 ml-3 fa fa-youtube-play icons"><a href="#"></a></li>
             <li class="list-group-item border-0 p-1 ml-3 fa fa-twitter icons"><a href="#"></a></li>
             <li class="list-group-item border-0 p-1 ml-3 fa fa-instagram icons"><a href="#"></a></li>

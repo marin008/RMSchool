@@ -1,5 +1,48 @@
 footer {
 
+    .container{   
+        .top-row {
+            color: #686868;
+            border-bottom: 1px solid #686868;
+            margin: 0;
+        }
+        .middle-row {
+            h5{
+                font-size: 20px;
+                padding: 12px 20px;
+                color: color(primary);
+            }
 
+            li {
+                border: none;
+                padding: 6px 20px;
+            }          
+        }
 
+        .bottom-row {
+            padding-left: 20px;
+
+            .footer-info {
+                a {
+                    color: #686868;
+                }
+            }
+
+            .connect{
+                color: color(primary);
+            }
+
+            .icons {
+                color: color(primary);
+                font-size: 20px;
+                transition: 0.3s ease-in-out;
+            }
+        
+            .icons:hover{
+                color: color(success);
+                cursor: pointer;
+            }
+        }
+
+    }    
 }

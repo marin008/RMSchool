@@ -1,17 +1,18 @@
 nav {
     
     a {
-        color: #0250A1;
+        color: color(primary);
         font-weight: 600;
     }
 
     .icons {
-        color: #0250A1;
+        color: color(primary);
         font-size: 30px;
         transition: 0.3s ease-in-out;
     }
 
     .icons:hover{
-        color: #6CB644;
+        color: color(success);
+        cursor: pointer;
     }
 }

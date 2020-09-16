@@ -10,6 +10,12 @@
 
     .filter-events {
         margin-left: -1%;
+        min-height: 51.8px;
+
+        .filter-events-title {
+            cursor: default;
+            
+        }
 
         .btn {
             border: 1px solid white;
@@ -87,8 +93,8 @@
     }
 
     .become-button {
-        min-width: 50%;
-        min-height: 75px;
+        min-width: 49%;
+        min-height: 150px;
         font-size: 36px;
     }
 }

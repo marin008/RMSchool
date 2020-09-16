@@ -4,7 +4,7 @@
     height:auto;
     
     .nav-item.active a{
-        color:#3CA3D6;
+        color:color(primary);
     }
 
     .nav-item a{
@@ -19,7 +19,7 @@
     }
 
     nav {
-        color: #0250A1;
+        color: color(primary);
     }
    
 }
