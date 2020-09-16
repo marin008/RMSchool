@@ -7,6 +7,7 @@
 Site::getSegment('hero_rotator');
 Site::getSegment('cta_image');
 Site::getSegment('ambassadors');
+Site::getSegment('events');
 //Site::getSegment('typography');
 
 

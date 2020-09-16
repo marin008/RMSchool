@@ -1,0 +1,94 @@
+.events {
+    background:color(white);
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    h2, p {
+        color: color(primary);
+    }
+
+    .filter-events {
+        margin-left: -1%;
+
+        .btn {
+            border: 1px solid white;
+            min-width: 100px;
+            transition: 0.3s ease-in-out;
+
+            &:after {
+                display: none;
+            }
+
+            &:hover {
+                border: 1px solid color(success);
+                background: color(white);
+                color: color(success);
+            }
+
+            &:focus {
+                box-shadow: none;
+                border: 1px solid color(success);
+            }
+        }
+    }
+
+    .event-cards {
+        
+
+        .event-card {
+            max-width: 260px;
+            min-height: 400px;
+            transition: 0.3s ease-in-out;
+            span {
+                margin:0;
+                color: color(primary);
+                transition: 0.3s ease-in-out;
+            }
+            
+            img {
+                max-width: 130%;
+            }
+            
+            .card-date {
+                color: color(white);
+                background: color(success);
+                z-index: 2;
+            }
+
+            button {
+                border: none;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    border: none;
+                    background: color(white);
+                    color: color(primary);
+                }
+            }
+
+            &:hover {
+                border-radius: 0;
+                box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.68);
+
+                span {
+                    color: color(success);
+                }
+
+                .card-date {
+                    color: color(white);
+                }
+
+                button {
+                    color: color(success);
+                }
+            }
+        }
+    }
+
+    .become-button {
+        min-width: 50%;
+        min-height: 75px;
+        font-size: 36px;
+    }
+}
