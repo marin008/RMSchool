@@ -1,4 +1,5 @@
 <section class="container-fluid pt-5 rmvideos">
+    <img src="assets/img/jpg/lab.jpg" alt="">
     <div class="container">
         <h3 class="col mb-3 font-weight-bolder pt-5">RM@Schools Videos on YouTube</h2>
     </div>

@@ -23,38 +23,33 @@
 .carousel-control-prev, .carousel-control-next {
     text-decoration: none;
     font-size: 80px;
+    width: 60px;
 }
 
 #carouselExampleIndicators {
     position: relative;
 
+    .carousel-item {
+        img {
+            position: absolute;
+            width: 100%;
+        }
+
+        .item-text {
+            color: color(white);
+        }
+
+        h2{
+            color: color(white);
+        }
+    }
+
     .active{
         background-color: white !important;
     }
 
-    .jedan {
-        background: linear-gradient(90deg, rgba(14,75,134,1) 0%, rgba(44,116,183,1) 100%);
-    }
-
-    .dva {
-        background: linear-gradient(90deg, rgba(14,75,134,1) 0%, rgba(44,116,183,1) 100%);
-    }
-
-    .tri {
-        background: linear-gradient(90deg, rgba(14,75,134,1) 0%, rgba(44,116,183,1) 100%);
-    }
-
-    h2 {
-        margin-left: 400px;
-        margin-top: 100px;
-    }
-
-    h4 {
-        margin-left: 400px;
-    }
-
     .btn {
-        margin: 25px 0 100px 400px;
+        
         box-shadow: 0px 0px 15px 2px #fff;
     }
     
