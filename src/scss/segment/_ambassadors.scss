@@ -26,6 +26,7 @@
 
            .card-text{
                background: color(white);
+               min-height: 170px;
            }
            .card-title {
                margin-left: 1.2rem;
@@ -35,6 +36,7 @@
            .card-footer {
                color: color(primary);
                border: none;
+               margin-top: auto;
            }
         }
         

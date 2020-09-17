@@ -43,8 +43,7 @@
         
 
         .event-card {
-            max-width: 260px;
-            min-height: 400px;
+
             transition: 0.3s ease-in-out;
             span {
                 margin:0;
@@ -60,6 +59,10 @@
                 color: color(white);
                 background: color(success);
                 z-index: 2;
+            }
+
+            .event-card-text {
+                min-height: 180px;
             }
 
             button {
@@ -95,6 +98,38 @@
     .become-button {
         min-width: 49%;
         min-height: 150px;
+        // font-size: 36px;
+    }
+}
+
+@media only screen and (max-device-width:1200px){
+    .become-button {
         font-size: 36px;
     }
+}
+
+@media only screen and (max-device-width:992px){
+
+    .become-button {
+        font-size: 36px;
+    }
+
+
+}
+
+@media only screen and (max-device-width:768px){
+
+    .become-button {
+        font-size: 28px;
+    }
+
+
+}
+
+@media only screen and (max-device-width:576px){
+
+    .become-button {
+        font-size: 24px;
+    }
+
 }

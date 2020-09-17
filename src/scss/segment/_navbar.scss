@@ -1,5 +1,6 @@
 nav {
-    
+    position: relative;
+    z-index:1000;
     a {
         color: color(primary);
         font-weight: 600;
@@ -15,10 +16,30 @@ nav {
         color: color(success);
         cursor: pointer;
     }
+
+    .collapse{
+
+        &.show{
+            position:absolute;
+            top:100%;
+            left:0;
+            width:100%;
+            background-color:$white !important;
+            padding:0 10px 10px 10px;
+            text-align: center;
+            box-shadow: inset 0px -1px 0px #DEDEDE;
+        }
+    }
+
+    .collapsing{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        text-align: center;
+        padding:0 10px 10px 10px;
+        background-color:$white !important;
+        box-shadow: inset 0px -1px 0px #DEDEDE;   
+    }
 }
 
-@media only screen and (max-width: 320px) {
-    .navbar-toggler {
-        position: absolute;
-    }
-  }
