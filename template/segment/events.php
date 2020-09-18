@@ -13,6 +13,17 @@
                 for($i=1; $i <= 3; $i++){
                     Site::getSegment('event_card', 
                     array(
+                    'event-card-display'=>'event-card-hide',
+                    'event-card-date'=>'9.11.2020.',
+                    'event-card-title'=>'The future of Education',
+                    'event-card-subtitle' =>'Virtual Conference',
+                    'event-card-img' => 'assets/img/jpg/placeholder.jpg'
+                    ));
+                }
+                for($i=1; $i <= 3; $i++){
+                    Site::getSegment('event_card', 
+                    array(
+                    'event-card-display'=>'event-card-show',
                     'event-card-date'=>'9.11.2020.',
                     'event-card-title'=>'The future of Education',
                     'event-card-subtitle' =>'Virtual Conference',

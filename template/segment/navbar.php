@@ -18,10 +18,10 @@
 		<div class="collapse navbar-collapse mt-auto" id="navbarTogglerDemo02">
       <div class="ml-auto pr-2 pt-4 pt-lg-0">
         <ul class="list-group list-group-horizontal ml-auto row justify-content-center justify-content-xl-end">
-                <li class="list-group-item border-0 p-1 ml-3 fa fa-facebook-square icons" href="#"><a href="#"></a></li>
-                <li class="list-group-item border-0 p-1 ml-3 fa fa-youtube-play icons"><a href="#"></a></li>
-                <li class="list-group-item border-0 p-1 ml-3 fa fa-twitter icons"><a href="#"></a></li>
-                <li class="list-group-item border-0 p-1 ml-3 fa fa-instagram icons"><a href="#"></a></li>
+                <li class="list-group-item border-0 p-1 ml-3"><a class="fa fa-facebook-square icons text-decoration-none" href="#"></a></li>
+                <li class="list-group-item border-0 p-1 ml-3"><a class ="fa fa-youtube-play icons text-decoration-none" href="#"></a></li>
+                <li class="list-group-item border-0 p-1 ml-3"><a class="fa fa-twitter icons text-decoration-none" href="#"></a></li>
+                <li class="list-group-item border-0 p-1 ml-3"><a class="fa fa-instagram icons text-decoration-none" href="#"></a></li>
             </ul>
         <ul class="list-group list-group-horizontal-xl ml-auto mt-1 mb-3 row">
                 <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="#">ABOUT US</a></li>

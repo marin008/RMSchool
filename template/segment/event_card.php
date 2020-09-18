@@ -1,7 +1,7 @@
-<div class="p-2 col-12 col-sm-6 col-md-4">
+<div class="p-2 col-12 col-sm-6 col-md-4  <?php echo $params["event-card-display"];?>">
     <div class="event-card">
         <div class="mb-n2 overflow-hidden d-flex justify-content-center align-items-center">
-            <img src="<?php echo $params["event-card-img"]?>" alt="">
+            <img src="<?php echo $params["event-card-img"];?>" alt="">
         </div>
         <span class="card-date mt-n4 p-2">
             <?php echo $params["event-card-date"]; ?>

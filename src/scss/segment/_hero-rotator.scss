@@ -33,6 +33,7 @@
         img {
             position: absolute;
             width: 100%;
+            min-height: 100%;
         }
 
         .item-text {
@@ -55,3 +56,8 @@
     
 }
 
+@media only screen and (max-device-width:576px){
+
+   
+
+}
