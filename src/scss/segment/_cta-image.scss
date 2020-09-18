@@ -41,3 +41,13 @@
         margin-top: auto;
     }
 }
+
+@media only screen and (max-device-width:768px){
+
+    .card {
+        width: 90%;
+        left: 0;
+        transform: translate(0,0);
+    }
+
+}

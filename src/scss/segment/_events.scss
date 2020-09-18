@@ -105,20 +105,25 @@
     .become-button {
         min-width: 49%;
         min-height: 150px;
-        //font-size: 36px;
+        font-size: 36px;
     }
 }
 
 @media only screen and (max-device-width:1200px){
-    .become-button {
-        font-size: 36px !important;
+    
+    .events{
+        .become-button {
+            font-size: 36px;
+        }
     }
 }
 
 @media only screen and (max-device-width:992px){
 
-    .become-button {
-        font-size: 36px;
+    .events{
+        .become-button {
+            font-size: 36px;
+        }
     }
 
 
@@ -126,8 +131,10 @@
 
 @media only screen and (max-device-width:768px){
 
-    .become-button {
-        font-size: 28px;
+    .events{
+        .become-button {
+            font-size:28px;
+        }
     }
 
 
@@ -135,8 +142,10 @@
 
 @media only screen and (max-device-width:576px){
 
-    .become-button {
-        font-size: 24px;
+    .events{
+        .become-button {
+            font-size: 24px;
+        }
     }
 
 }

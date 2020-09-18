@@ -4,7 +4,6 @@
             <h2 class="col-12">Active learning with <span>hands-on teaching material</span></h2>
         </div>
     </div>
-
     <div class="row row2 mt-5 px-0">
         <div class="col col-lg-9 mx-auto">
             <div class="img-container pozadina">
