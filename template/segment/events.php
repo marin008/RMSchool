@@ -4,8 +4,8 @@
         <p class="col text-justify mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem sapiente recusandae ab. Libero ducimus nobis consequatur natus earum aspernatur aperiam! Nam illum nostrum rerum?</p>
         <div class="filter-events pt-5">
             <button class="btn btn-outline-success filter-events-title">Filter Events</button>
-            <button class="btn btn-outline-success">Upcoming</button>
-            <button class="btn btn-outline-success">Past</button>
+            <button class="btn btn-outline-success btn-upcoming">Upcoming</button>
+            <button class="btn btn-outline-success btn-past">Past</button>
         </div>
 
         <div class="event-cards pt-3 d-flex flex-wrap justify-content-between align-items-center">
