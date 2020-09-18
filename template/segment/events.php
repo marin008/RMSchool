@@ -16,7 +16,18 @@
                     'event-card-date'=>'9.11.2020.',
                     'event-card-title'=>'The future of Education',
                     'event-card-subtitle' =>'Virtual Conference',
-                    'event-card-img' => 'assets/img/jpg/placeholder.jpg'
+                    'event-card-img' => 'assets/img/jpg/placeholder.jpg',
+                    'event-card-state'=>'event-card-upcoming'
+                    ));
+                }
+                for($i=1; $i <= 3; $i++){
+                    Site::getSegment('event_card', 
+                    array(
+                    'event-card-date'=>'7.11.2020.',
+                    'event-card-title'=>'The future of Education',
+                    'event-card-subtitle' =>'Virtual Conference',
+                    'event-card-img' => 'assets/img/jpg/placeholder.jpg',
+                    'event-card-state'=>'event-card-past'
                     ));
                 }
                 
