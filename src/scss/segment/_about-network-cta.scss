@@ -1,4 +1,4 @@
-.about-learn-more {
+.about-network {
     position: relative;
     overflow: hidden;
     margin: 0;
@@ -16,7 +16,7 @@
         min-height: 50vh;
 
         h3, p {      
-            color: color(white);
+            color: color(primary);
             z-index: 100;    
         }
 
@@ -60,6 +60,7 @@
 
                     h3 {
                         border: 2px solid white;
+                        color: color(white);
                         padding: 10px 20px;
                         font-size: 30px;
                         width: 100%;
