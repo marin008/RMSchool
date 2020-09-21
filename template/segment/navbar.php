@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-xl pt-0 flex-nowrap navbar-light">
 
 		<div class="logos">
-      <a href="#" class="navbar-brand py-0">
+      <a href="index" class="navbar-brand py-0">
         <img src="assets/img/png/logo.png" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4">
         
       </a>
@@ -24,7 +24,7 @@
                 <li class="list-group-item border-0 p-1 ml-3"><a class="fa fa-instagram icons text-decoration-none" href="#"></a></li>
             </ul>
         <ul class="list-group list-group-horizontal-xl ml-auto mt-1 mb-3 row">
-                <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="#">ABOUT US</a></li>
+                <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="about">ABOUT US</a></li>
                 <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="#">TEACHING RESOURCES</a></li>
                 <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="#">STUDENTS IN ACTION</a></li>
                 <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="#">EVENTS</a></li>

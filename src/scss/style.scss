@@ -22,6 +22,8 @@
 @import 'common/header';
 @import 'common/footer';
 
+
+//Landing page
 // @import 'segment/preloader';
 // @import 'segment/cookie-accept';
 // @import 'segment/content';
@@ -32,6 +34,11 @@
 @import 'segment/ambassadors';
 @import 'segment/events';
 @import 'segment/rmvideos';
+
+//About section
+@import 'segment/about-section-heading';
+@import 'segment/about-section-text';
+@import 'segment/about-section-learn-more';
 
 @import 'pages/page';
 
