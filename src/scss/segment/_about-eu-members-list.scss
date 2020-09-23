@@ -1,0 +1,45 @@
+.about-eu-members-list {
+
+    .accordion {
+
+        border: none;
+        background: none;
+
+        .card {
+            background: none;
+            border-top: 1px solid color(success);
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            
+            .card-header {
+                border: none;
+                padding: 0;
+                margin :0;
+                background: none;
+                color: color(success);
+
+            }
+
+            .collapse {
+                color: color(primary);
+                
+                .btn {
+                    color: color(success);
+                    border: none;
+                    background: #F0F8EB;
+
+                    a{
+                        color: color(success);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .show {
+                color: color(primary);
+            }
+        }
+    }
+}

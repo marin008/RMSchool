@@ -18,7 +18,7 @@
                     'event-card-subtitle' =>'Virtual Conference',
                     'event-card-img' => 'assets/img/jpg/placeholder.jpg',
                     'event-card-state'=>'event-card-upcoming'
-                    ));
+                    ));                   
                 }
                 for($i=1; $i <= 3; $i++){
                     Site::getSegment('event_card', 
